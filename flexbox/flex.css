@@ -1,0 +1,28 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f0f0;
+}
+.container {
+    display: flex;
+    gap: 5px;
+    flex-direction: column-reverse;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+
+}
+.box {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+
+
+}
+.box1{background-color: #2196f3;}
+.box2{background-color: #8e21f3;}
+.box3{background-color: #f3c921;}
+.box4{background-color: #f32121;}
+.box5{background-color: #f32187;}
