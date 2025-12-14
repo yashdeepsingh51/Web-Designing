@@ -30,28 +30,28 @@ html,body {
     
 }
 #card1:hover {
-    z-index: 10;
+    z-index: 5;
 }
 #card2{
     z-index: 3;
     rotate: -7deg;
 }
 #card2:hover {
-    z-index: 10;
+    z-index: 5;
 }
 #card3{
     z-index: 2;
     rotate: -14deg;
 }
 #card3:hover {
-    z-index: 10;
+    z-index: 5;
 }
 #card4{
     z-index: 1;
     rotate: -21deg;
 }
 #card4:hover {
-    z-index: 10;
+    z-index: 5;
 }
 img{
     height: 100%;
