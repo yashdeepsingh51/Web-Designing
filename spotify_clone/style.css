@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  background: #000;
+  color: #fff;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: #000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  color: rgb(28, 208, 28);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.library h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card {
+  background: #181818;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.card p {
+  font-weight: bold;
+}
+
+.card span {
+  font-size: 13px;
+  color: #b3b3b3;
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-footer {
+  font-size: 12px;
+}
+
+.sidebar-footer a {
+  display: block;
+  color: #b3b3b3;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+.lang {
+  margin-top: 10px;
+  background: transparent;
+  color: white;
+  border: 1px solid #555;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  background: linear-gradient(#222, #121212);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.topbar input {
+  width: 300px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+}
+
+.top-actions button {
+  margin-left: 10px;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.ghost {
+  background: transparent;
+  color: #b3b3b3;
+}
+
+.login {
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
+/* Sections */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.section-header a {
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+/* Artists */
+.artist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.artist-card {
+  background: #181818;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.artist-card img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.artist-card span {
+  font-size: 13px;
+  color: #b3b3b3;
+}
+
+/* Albums */
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.album-card {
+  background: #181818;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.album-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
