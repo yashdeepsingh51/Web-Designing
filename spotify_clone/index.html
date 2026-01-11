@@ -3,13 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <title>Spotify UI Clone</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css"
+    rel="stylesheet"/>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- Sidebar -->
   <aside class="sidebar">
-    <div class="logo">Spotify</div>
+    <div class="logo"><i class="ri-spotify-line"></i>Spotify</div>
+    
 
     <div class="library">
       <h3>Your Library</h3>
@@ -33,7 +37,9 @@
     
     <!-- Top Bar -->
     <header class="topbar">
+      
       <input type="text" placeholder="What do you want to play?" />
+      
       <div class="top-actions">
         <button class="ghost">Premium</button>
         <button class="ghost">Support</button>
@@ -41,6 +47,41 @@
         <button class="login">Log in</button>
       </div>
     </header>
+       <!--trending song-->
+    <section>
+      <div class="section-header">
+        <h2>Trending Songs</h2>
+        <a href="#">Show all</a>
+      </div>
+
+      <div class="album-grid">
+        <div class="album-card">
+          <img src="https://c.saavncdn.com/085/Ghar-Kab-Aaoge-From-BORDER-2-Hindi-2026-20251231171003-500x500.jpg" />
+          <h4>Ghar Kab Aaoge </h4>
+        </div>
+          <div class="album-card">
+          <img src="https://images.genius.com/04159db08b6ef156e3418efa558af170.1000x1000x1.png" />
+          <h4>I Just Might</h4>
+        </div>
+        
+
+        <div class="album-card">
+          <img src="https://i.scdn.co/image/ab67616d00001e020c8806717b030da10e9fd336" />
+          <h4>Not Guilty</h4>
+        </div>
+
+        <div class="album-card">
+          <img src="https://i.scdn.co/image/ab67616d0000b2738fa95e3e74799cb0b2a1fb57" />
+          <h4>Aadat(feat.AP Dhillon)</h4>
+        </div>
+
+        <div class="album-card">
+          <img src="https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/9b/61/73/9b61734e-84e2-147f-fe9b-2a031cd75d7d/artwork.jpg/600x600cc.webp" />
+          <h4>Just A Boy</h4>
+        </div>
+      </div>
+    </section>
+
 
     <!-- Popular Artists -->
     <section>
@@ -121,6 +162,78 @@
         </div>
       </div>
     </section>
+
+    <!--radio-->
+    <section>
+      <div class="section-header">
+        <h2>Popular radio</h2>
+        <a href="#">Show all</a>
+      </div>
+
+      <div class="album-grid">
+        <div class="album-card">
+          <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en" />
+          <h4>With Sachin-Jigar, Jeet Gannguli, Atif...</h4>
+        </div>
+
+        <div class="album-card">
+          <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4fEkbug6kZzzJ8eYX6Kbbp/it" />
+          <h4>With Pritam, Shankar-Ehsaan-Loy, Arijit...</h4>
+        </div>
+
+        <div class="album-card">
+          <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0oOet2f43PA68X5RxKobEy/en" />
+          <h4>With A.R. Rahman, Arijit Singh, Atif... </h4>
+        </div>
+
+        <div class="album-card">
+          <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3gBKY0y3dFFVRqicLnVZYz/de" />
+          <h4>With Vinod Rathod,  Kumar Sanu...</h4>
+        </div>
+
+        <div class="album-card">
+          <img src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2FKWNmZWDBZR4dE5KX4plR/en" />
+          <h4>With Karan Aujla, Shubh, AP Dhillon and more</h4>
+        </div>
+      </div>
+    </section>
+    <!--charts-->
+
+    <section>
+      <div class="section-header">
+        <h2>Featured Charts</h2>
+        <a href="#">Show all</a>
+      </div>
+
+      <div class="album-grid">
+        <div class="album-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGLlBu6U1jfDUnXRCLefd3NBreENIgyowtcw&s" />
+          <h4>Your weekly update of the most played</h4>
+        </div>
+
+        <div class="album-card">
+          <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_in_default.jpg" />
+          <h4>Your weekly update of the most played</h4>
+        </div>
+
+        <div class="album-card">
+          <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg" />
+          <h4>Your daily updates of the most played</h4>
+        </div>
+
+        <div class="album-card">
+          <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_in_default.jpg" />
+          <h4>Your daily updates of the most played</h4>
+        </div>
+
+        <div class="album-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTse5sPwkPTnMPFVaFxt9WcA8OxoFRYOaj6lg&s" />
+          <h4>Your daily update of the most viral tracks</h4>
+        </div>
+      </div>
+    </section>
+
+
 
   </main>
 
