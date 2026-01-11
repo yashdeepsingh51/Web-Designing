@@ -16,22 +16,24 @@ body {
 .sidebar {
   width: 260px;
   background: #000;
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 
 .logo {
   font-size: 24px;
-  color: rgb(47, 198, 47);
+  color: rgb(47, 196, 47);
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .library h3 {
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+
 }
 
 .card {
@@ -146,8 +148,11 @@ body {
   border-radius: 8px;
   text-align: center;
 }
-
-.artist-card img {
+.artist-card:hover {
+  background: #282828;
+}
+  
+ .artist-card img {
   width: 100%;
   border-radius: 50%;
   margin-bottom: 10px;
@@ -175,4 +180,51 @@ body {
   width: 100%;
   border-radius: 6px;
   margin-bottom: 10px;
+}
+
+/* Make album card relative */
+.album-card {
+  position: relative;
+  transition: background 0.3s;
+}
+
+.album-card:hover {
+  background: #282828;
+}
+
+/* Play button */
+.play-btn {
+  position: absolute;
+  bottom: 60px;
+  right: 15px;
+
+  width: 45px;
+  height: 45px;
+  background: #1db954;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: black;
+  font-size: 22px;
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition: 0.3s;
+}
+
+/* Show play button on hover */
+.album-card:hover .play-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+.artist-card {
+  position: relative;
+  transition: background 0.3s;
+}
+.artist-card:hover .play-btn {
+  opacity: 1;
+  transform: translateY(0);
 }
